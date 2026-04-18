@@ -116,7 +116,6 @@
         setTimeout(function(){preloader.classList.add('done')},2400);
         var toastEl=document.getElementById('toast'),toastTimer=null;
         function showToast(msg,type){if(toastTimer)clearTimeout(toastTimer);toastEl.textContent=msg;toastEl.className='toast show'+(type?' '+type:'');toastTimer=setTimeout(function(){toastEl.className='toast'},3000)}
-        // Allow default download behavior for resume
         var dot=document.getElementById('cDot'),ring=document.getElementById('cRing'),mx=-100,my=-100,rx=-100,ry=-100;
         document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY});
         document.addEventListener('mousedown',function(){ring.classList.add('click')});
